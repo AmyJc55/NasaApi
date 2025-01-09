@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA API - Imagen del Día</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>NASA Imagen del Día</h1>
+    <label for="date">Selecciona una fecha:</label>
+    <input type="date" id="date" />
+    <button id="fetch-data">Ver imagen</button>
+
+    <div id="result" class="hidden">
+      <h2 id="title"></h2>
+      <p id="description"></p>
+      <img id="image" class="hidden" alt="NASA Imagen del Día" />
+      <iframe id="video" class="hidden" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script src="api.js"></script>
+</body>
+</html>
